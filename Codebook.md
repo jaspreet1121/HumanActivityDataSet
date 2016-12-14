@@ -1,7 +1,7 @@
 ## Coodebook (HumanActivityDataSet)
 run_analysis.R script
 
-# Input Data
+# input Data
 The input data containts the following data files:
 
 - X_train.txt contains variable features that are intended for training
@@ -15,17 +15,17 @@ The input data containts the following data files:
 
 # analysis & transformation
 step by step transformation is explained in the run_analysis.R script
-1. downloading and extracting the zip file
-2. reading input Data into the R
-3. merging training and test data sets together for subjects, activities and features independently
-4. Indices of columns that contain std or mean are extracted and used later 
-5. renaming column names in the features data set (from featureNames)
-6. renaming activity variables (from activityLabels)
-7. merging features, activity and subject into tidyData
-8. renaming acronyms in variable names in columns (like 'Acc', 'Gyro', 'Mag', 't' and 'f' are replaced with descriptive labels such as 'Accelerometer', 'Gyroscpoe', 'Magnitude', 'Time' and 'Frequency')
-9. data is saved to file (HumanActivityDataSet.txt)
-10. averages of each variable for each activity and each subject is extracted to the separate data set
-11. extracted data set is saved as (HumanActivityDataSet-Small.txt)
+- downloading and extracting the zip file
+- reading input Data into the R
+- merging training and test data sets together for subjects, activities and features independently
+- Indices of columns that contain std or mean are extracted and used later 
+- renaming column names in the features data set (from featureNames)
+- renaming activity variables (from activityLabels)
+- merging features, activity and subject into tidyData
+- renaming acronyms in variable names in columns (like 'Acc', 'Gyro', 'Mag', 't' and 'f' are replaced with descriptive labels such as 'Accelerometer', 'Gyroscpoe', 'Magnitude', 'Time' and 'Frequency')
+- data is saved to file (HumanActivityDataSet.txt)
+- averages of each variable for each activity and each subject is extracted to the separate data set
+- extracted data set is saved as (HumanActivityDataSet-Small.txt)
 
 
 # output
@@ -82,10 +82,10 @@ step by step transformation is explained in the run_analysis.R script
 [87] "Angle (Y,Gravity Mean)"                                      "Angle (Z,Gravity Mean)"
 '''
 
-# Subjet
+# "Subjet"
 Tested subjects between 1 and 30
 
-# Activity
+# "Activity""
 
 > levels(factor(tidyData$Activity))  
 [1] "walking"            "walking upstairs"   "walking downstairs" "sitting"            "standing"           "laying"  
