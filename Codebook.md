@@ -1,7 +1,7 @@
-## Coodebook (HumanActivityDataSet)
+# Coodebook (HumanActivityDataSet)
 run_analysis.R script
 
-# input Data
+## input Data
 The input data containts the following data files:
 
 - X_train.txt contains variable features that are intended for training
@@ -13,7 +13,7 @@ The input data containts the following data files:
 - activity_labels.txt contains metadata on the different types of activities
 - features.txt contains the name of the features in the data sets
 
-# analysis & transformation
+## analysis & transformation
 step by step transformation is explained in the run_analysis.R script
 - downloading and extracting the zip file
 - reading input Data into the R
@@ -28,12 +28,12 @@ step by step transformation is explained in the run_analysis.R script
 - extracted data set is saved as (HumanActivityDataSet-Small.txt)
 
 
-# output
+## output
 - tidyData - full data stack with merged Test and Training datasets
 - HumanActivityDataSet.txt file - tabular separated data 
 - HumanActivityDataSet-Small.txt - tabular separated data with the averages of each variable for each activity and each subject
 
-# names of the columns
+## names of the columns
 
 > names(tidyData)
  [1] "Subject"                                                     "Activity"                                                   
@@ -82,10 +82,10 @@ step by step transformation is explained in the run_analysis.R script
 [87] "Angle (Y,Gravity Mean)"                                      "Angle (Z,Gravity Mean)"
 '''
 
-# "Subjet"
+## "Subjet"
 Tested subjects between 1 and 30
 
-# "Activity""
+## "Activity""
 
 > levels(factor(tidyData$Activity))  
 [1] "walking"            "walking upstairs"   "walking downstairs" "sitting"            "standing"           "laying"  
