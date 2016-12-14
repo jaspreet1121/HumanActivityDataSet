@@ -35,7 +35,6 @@ step by step transformation is explained in the run_analysis.R script
 
 # names of the columns
 
-'''
 > names(tidyData)
  [1] "Subject"                                                     "Activity"                                                   
  [3] "Time Body Accelerometer Mean-X"                              "Time Body Accelerometer Mean-Y"                             
@@ -88,7 +87,6 @@ Tested subjects between 1 and 30
 
 # Activity
 
-'''
 > levels(factor(tidyData$Activity))  
 [1] "walking"            "walking upstairs"   "walking downstairs" "sitting"            "standing"           "laying"  
 
